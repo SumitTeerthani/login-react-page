@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
-
+import { BrowserRouter } from 'react-router-dom'
 function App() {
   
 
@@ -9,7 +9,11 @@ function App() {
 
   return (
     <>
-       <Navbar/>
+    <BrowserRouter>
+    <Navbar/>
+    </BrowserRouter>
+
+       
     </>
   )
 }
